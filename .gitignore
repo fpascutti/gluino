@@ -1,4 +1,5 @@
 /build/
-/node_modules/
 /lib/Debug/
 /lib/Release/
+/node_modules/
+/out/

@@ -1,5 +1,9 @@
 /.vscode/
 /build/
+/lib/Debug/
+/lib/Release/
 /node_modules/
+/out/
+/test/
 /.gitignore
 /.npmignore

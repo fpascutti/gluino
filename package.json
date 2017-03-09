@@ -14,6 +14,7 @@
         }
     ],
     "main": "./lib/index.js",
+    "typings": "./lib/index.d.ts",
     "binary": {
         "module_name": "gluino",
         "module_path": "./lib/{configuration}/{node_abi}-{platform}-{arch}/",
@@ -30,12 +31,19 @@
         "node-pre-gyp": "^0.6.33"
     },
     "devDependencies": {
-        "node-pre-gyp-github": "^1.3.1"
+        "@types/chai": "^3.4.35",
+        "@types/mocha": "^2.2.39",
+        "chai": "^3.5.0",
+        "mocha": "^3.2.0",
+        "node-pre-gyp-github": "^1.3.1",
+        "typescript": "^2.2.1"
     },
     "scripts": {
         "install": "node-pre-gyp install --fallback-to-build",
         "lib:build:release": "node-pre-gyp configure --release && node-pre-gyp build --release",
-        "pretest": "npm run-script lib:build:release",
-        "test": "node --eval \"console.log(require('.').hello());\""
+        "pretest:build": "npm run-script lib:build:release",
+        "test:build": "tsc --project ./test/tsconfig.json --module commonjs --outDir ./out --rootDir ./test",
+        "pretest": "npm run-script test:build",
+        "test": "mocha --full-trace --check-leaks --no-exit ./out/**/*.test.js"
     }
 }

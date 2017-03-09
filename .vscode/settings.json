@@ -13,10 +13,25 @@
         "lib/Debug/": true,
         "lib/Release/": true,
         "node_modules/": true,
+        "out/": true,
         ".gitignore": true,
         ".npmignore": true,
         "LICENSE_1_0.txt": true,
         "npm-debug.log": true
     },
-    "json.format.enable": true
+    "json.format.enable": true,
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "typescript.format.enable": true,
+    "typescript.format.insertSpaceAfterCommaDelimiter": true,
+    "typescript.format.insertSpaceAfterSemicolonInForStatements": true,
+    "typescript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+    "typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
+    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false
 }
