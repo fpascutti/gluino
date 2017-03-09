@@ -4,9 +4,6 @@
             "target_name": "<(module_name)",
             "sources": [
                 "./src/index.cpp"
-            ],
-            "defines": [
-                "GLUINO_MODULE_NAME=<(module_name)"
             ]
         },
         {
