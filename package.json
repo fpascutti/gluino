@@ -1,15 +1,23 @@
 {
     "name": "gluino",
     "version": "0.0.1",
-    "description": "Thomson Reuters Elektron Native Streaming Addon",
-    "homepage": "https://git.sami.int.thomsonreuters.com/upg_EikonPerformanceAndRealtime/gluino",
+    "homepage": "https://github.com/fpascutti/gluino",
+    "bugs": {
+        "url": "https://github.com/fpascutti/gluino/issues"
+    },
+    "license": "BSL-1.0",
+    "contributors": [
+        {
+            "name": "Franck Pascutti",
+            "email": "gatorette@free.fr",
+            "url": "https://github.com/fpascutti"
+        }
+    ],
     "repository": {
         "type": "git",
-        "url": "https://git.sami.int.thomsonreuters.com/upg_EikonPerformanceAndRealtime/gluino.git"
+        "url": "https://github.com/fpascutti/gluino.git"
     },
     "private": true,
-    "main": "./build/release/index.node",
-    "typings": "./build/index.d.ts",
     "dependencies": {},
     "devDependencies": {},
     "scripts": {}
