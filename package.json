@@ -43,7 +43,7 @@
         "install": "node-pre-gyp install --fallback-to-build",
         "lib:build:release": "node-pre-gyp configure --release && node-pre-gyp build --release",
         "pretest:build": "npm run-script lib:build:release",
-        "posttest:build": "tslint --type-check --project ./test/tsconfig.json --config ./test/tslint.json --format verbose",
+        "posttest:build": "tslint --project ./test/tsconfig.json --config ./test/tslint.json --format verbose",
         "test:build": "tsc --project ./test/tsconfig.json --module commonjs --outDir ./out --rootDir ./test",
         "pretest": "npm run-script test:build",
         "test": "mocha --full-trace --check-leaks --no-exit ./out/**/*.test.js"
