@@ -33,5 +33,10 @@
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
     "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
-    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+    "C_Cpp.clang_format_style": "Google",
+    "C_Cpp.clang_format_sortIncludes": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    }
 }
