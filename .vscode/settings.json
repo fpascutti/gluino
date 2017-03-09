@@ -9,9 +9,13 @@
     "files.insertFinalNewline": true,
     "files.exclude": {
         ".vscode/": true,
+        "build/": true,
+        "lib/Debug/": true,
+        "lib/Release/": true,
         "node_modules/": true,
         ".gitignore": true,
         ".npmignore": true,
+        "LICENSE_1_0.txt": true,
         "npm-debug.log": true
     },
     "json.format.enable": true
