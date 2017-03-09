@@ -1,11 +1,11 @@
-import "mocha";
 import { expect } from "chai";
+import "mocha";
 
 import { hello } from "..";
 
-describe("hello", function(): void {
+describe("hello", function description(): void {
 
-    it("should always return 'world!'", function(): void {
+    it("should always return 'world!'", function test(): void {
         expect(hello()).to.equal("world!");
     });
 

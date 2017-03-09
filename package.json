@@ -36,12 +36,14 @@
         "chai": "^3.5.0",
         "mocha": "^3.2.0",
         "node-pre-gyp-github": "^1.3.1",
+        "tslint": "^4.5.1",
         "typescript": "^2.2.1"
     },
     "scripts": {
         "install": "node-pre-gyp install --fallback-to-build",
         "lib:build:release": "node-pre-gyp configure --release && node-pre-gyp build --release",
         "pretest:build": "npm run-script lib:build:release",
+        "posttest:build": "tslint --type-check --project ./test/tsconfig.json --config ./test/tslint.json --format verbose",
         "test:build": "tsc --project ./test/tsconfig.json --module commonjs --outDir ./out --rootDir ./test",
         "pretest": "npm run-script test:build",
         "test": "mocha --full-trace --check-leaks --no-exit ./out/**/*.test.js"
