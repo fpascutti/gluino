@@ -1,0 +1,44 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cppvsdbg",
+            "request": "launch",
+            "name": "test:c++.win",
+            "program": "node.exe",
+            "cwd": "${workspaceRoot}",
+            "args": [
+                "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+                "--no-timeouts",
+                "--colors",
+                "--full-trace",
+                "--check-leaks",
+                "--no-exit",
+                "${workspaceRoot}/out/**/*.test.js"
+            ],
+            "externalConsole": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "test:typescript",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "cwd": "${workspaceRoot}",
+            "args": [
+                "--no-timeouts",
+                "--colors",
+                "--full-trace",
+                "--check-leaks",
+                "--no-exit",
+                "${workspaceRoot}/out/**/*.test.js"
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
+            "sourceMaps": true,
+            "outFiles": [
+                "${workspaceRoot}/lib/**/*.js",
+                "${workspaceRoot}/out/**/*.js"
+            ]
+        }
+    ]
+}
